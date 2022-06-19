@@ -26,7 +26,7 @@ For this reason an iterated quadrature rule is used to obtain the solution behav
 The resulting time points and solution values are printed as matrices in Matlab Syntax.  
 This way the plots will be properly graphed as discontinuous.
 ## How to run the code ##
-You need to install deal.II in your system.  
+You need to install [deal.II](https://dealii.org/) in your system.  
 Then clone or download this code and change to it's directory. Then call
 ```
 cmake -DDEAL_II_DIR=<path_to_your_deal_install> .
