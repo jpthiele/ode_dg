@@ -6,7 +6,8 @@ This is based on https://dealii.org/current/doxygen/deal.II/step_3.html which so
 Here we solve the ODE
 $u'(t) = \lambda u(t)$ on $I=(0,T)$  
 with $u(0) = u^0 = 1$.  
-Next we split the closure of our interval, i.e. $[0,T]$, into M intervals $I_m(t_{m-1},t_m}$ such that $\bar{I} = \{0\}\cup I_1 \cup I_2 \cup \dots \cup I_M$ 
+Next we split the closure of our interval into M intervals $I_m=(t_{m-1},t_m]$ such that
+$\bar{I} = \{0\}\cup I_1 \cup I_2 \cup \dots \cup I_M$ 
 and $t_M =T$.  
 By multiplying with suitable discontinuous Galerkin test functions $\varphi\in dG(r)$of order $r$, including jump terms and integrating over the temporal interval 
 we obtain the weak formulation.  
